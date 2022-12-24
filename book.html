@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+
+    
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body{
+    background-color:floralwhite;
+}
+
+</style>
+</head>
+<body>
+    
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 border p-4 shadow bg-dark">
+            <div class="col-12">
+                <h3 class="fw-normal text-secondary fs-4 text-uppercase mb-4">Appointment form</h3>
+            </div>
+            <form action="mailto:sainkee1997@gmail.com" method="POST" enctype="text/plain">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" id="email">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="date" class="form-control" placeholder="Enter Date">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="time" class="form-control" placeholder="Enter Email">
+                    </div>
+                    <div class="col-12">
+                        <select class="form-select">
+                            <option selected>Purpose Of Appointment</option>
+                            <option value="1">Hair styling </option>
+                            <option value="2">Hair Cut Consultation</option>
+                            <option value="3">Hair Colouring</option>
+                            <option value="3">Body Massage</option>
+                            <option value="3">Straight Razor Shave</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-12 mt-5">                        
+                        <button type="submit" class="btn btn-primary float-end" onclick="submitForm()">Book Appointment</button>
+                        <button type="button" class="btn btn-outline-secondary float-end me-2">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function submitForm() {
+    let emailField = document.getElementById('email');
+    let email = emailField.value;
+    if(email != "abc@example.com"){
+        console.log("Incorrect email!");
+        email.preventDefault
+        return false;
+}
+console.log("Form submitted successfully...");
+}
+</script>
+</html>

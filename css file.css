@@ -1,0 +1,16 @@
+
+   .title{ background-image: url("..\images\background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display:block;
+   }
+   .nav-item{
+    margin: 10px 30px;
+   }
+
+
+   /* Feature Item */
+   .featureItem{
+         justify-content: center;
+   }
